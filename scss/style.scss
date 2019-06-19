@@ -1,0 +1,55 @@
+// ***********************
+// Author: Alan Bogov
+// Created: 19/06/2019
+// Social: vk.com/avavion
+// ***********************
+
+// Document Colors
+$documentBackgroundColor: #fdfdfd;
+
+// Header Colors
+// $navbarBackgroundColor:
+
+// Link Colors
+$linkDefaultColor: #ff0000;
+$linkHoverColor: #940000;
+$linkActiveColor: #c94949;
+
+// Миксины
+
+
+// Глобальные настройки
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $documentBackgroundColor;
+  box-sizing: border-box;
+}
+
+// Списки - глобальные настройки (меню, шапка)
+
+ul {
+  display: block;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+// Ссылка - глобальные настройки
+
+a {
+  color: $linkDefaultColor;
+  text-decoration: none;
+  &:hover {
+    color: $linkHoverColor;
+  }
+  &:active {
+    color: $linkActiveColor;
+  }
+}
