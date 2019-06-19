@@ -5,47 +5,82 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:400,500,700&display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/5c55b6f969.js"></script>
+
+	<!-- Custorm CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Pomodoro Timer - create by avavion.</title>
 </head>
 
 <body>
 
-	<!-- Шапка сайта -->
+	<!-- Предварительная загрузка
+	<div class="preloader">
+		<div class="loader">
+
+		</div>
+	</div> -->
+
+	<!-- Шапка сайта - header -->
 	<header class="header" id="header">
+		<div class="container">
 
-		<!-- Панель навигации -->
-		<nav class="navbar">
+			<!-- Панель навигации -->
+			<nav class="navbar">
 
-			<!-- Логотип на панели навигации -->
-			<div class="logo">
-				<a href="index.html">
-					<img src="#" alt="Логотип">
-				</a>
-			</div>
-
-			<!-- Список пунктов меню -->
-			<div class="menu">
-				<!-- Кнопка Burger Menu -->
-				<div class="menu-list__button">
-					<i class="menu-list__button-line"></i>
-					<i class="menu-list__button-line"></i>
-					<i class="menu-list__button-line"></i>
+				<!-- Логотип на панели навигации -->
+				<div class="logo">
+					<a href="index.html">
+						<i class="far fa-clock"></i>
+						<h1 class="logo__heading">Pomodoro</h1>
+					</a>
 				</div>
-				<ul class="menu-list menu-list-desktop">
-					<li class="menu-list__item"><a href="#">Главная</a></li>
-					<li class="menu-list__item"><a href="#">Таймер</a></li>
-					<li class="menu-list__item"><a href="#">Техника "Помидор"</a></li>
-					<li class="menu-list__item"><a href="#">Разработчики</a></li>
-				</ul>
-			</div>
 
-		</nav>
+				<!-- Список меню -->
+				<div class="menu">
 
+					<!-- Список пунктов меню -->
+					<ul class="menu-list">
+						<li class="menu-list__item"><a href="#">Главная</a></li>
+						<li class="menu-list__item"><a href="#">Таймер</a></li>
+						<li class="menu-list__item"><a href="#">Техника "Помидор"</a></li>
+						<li class="menu-list__item"><a href="#">Разработчики</a></li>
+					</ul>
+
+					<!-- Кнопка Burger Menu -->
+					<div class="menu-list__button">
+						<i class="menu-list__button-line"></i>
+						<i class="menu-list__button-line"></i>
+						<i class="menu-list__button-line"></i>
+					</div>
+
+				</div>
+
+			</nav>
+
+		</div>
 	</header>
 
+
+	<!-- Основная секция - main -->
+	<main class="main" id="main">
+
+	</main>
+
+	<!-- Подвал сайта - footer -->
+	<footer class="footer" id="footer">
+
+	</footer>
+
 	<!-- Скрипты проекта -->
-	<script src="scripts/main.js" defer></script>
+	<!-- <script src="scripts/preloader.js"></script> -->
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
