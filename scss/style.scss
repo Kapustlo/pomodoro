@@ -14,6 +14,9 @@ $Medium: 500;
 $SemiBold: 600;
 $Bold: 700;
 
+// Header Colors
+$burgerButton: #ffffff;
+
 // Footer Colors
 $footerBG: #4a4a4a;
 $footerP: #ffffff;
@@ -72,6 +75,15 @@ a {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .main {
+  padding-top: 100px;
+}
+
 // Стилизация секции - header
 .header {
   background-color: #8ec5fc;
@@ -104,6 +116,20 @@ a {
 
 // Стилизация menu - header
 .menu {
+  display: flex;
+  &-list__button-line {
+    margin-left: 20px;
+    height: 3px;
+    width: 30px;
+    background-color: $burgerButton;
+    display: none;
+    margin-bottom: 4px;
+  }
+
+  &-list-enable {
+    display: block;
+  }
+
   &-list__item {
     margin-right: 50px;
     a {
@@ -119,7 +145,6 @@ a {
 .footer {
   background-color: $footerBG;
   color: $footerP;
-
   &-content {
     padding-top: 32px;
     height: calc(200px - 32px);
