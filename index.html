@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:400,500,700&display=swap"
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:400,500,700&display=swap"
 		rel="stylesheet">
 
 	<!-- Font Awesome -->
@@ -20,13 +20,6 @@
 
 <body>
 
-	<!-- Предварительная загрузка
-	<div class="preloader">
-		<div class="loader">
-
-		</div>
-	</div> -->
-
 	<!-- Шапка сайта - header -->
 	<header class="header" id="header">
 		<div class="container">
@@ -36,7 +29,7 @@
 
 				<!-- Логотип на панели навигации -->
 				<div class="logo">
-					<a href="#">
+					<a href="#header">
 						<i class="far fa-clock"></i>
 						<h1 class="logo__heading">Pomodoro</h1>
 					</a>
@@ -80,7 +73,85 @@
 
 	<!-- Подвал сайта - footer -->
 	<footer class="footer" id="footer">
+		<div class="container">
 
+			<!-- Обёртка для flex-box -->
+			<div class="footer-content">
+
+				<!-- Разделение на две части. Левая сторона.-->
+				<div class="footer-content-left">
+
+					<!-- Первая колонка в footer - это меню -->
+					<div class="footer-menu">
+
+						<!-- Заголовки в секции везде одинаковые, вынес в отдельный класс -->
+						<h4 class="footer-menu__heading footer__heading">Меню</h4>
+
+						<!-- Сам list-menu в footer -->
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="index.html">Главная</a></li>
+							<li class="footer-menu__item"><a href="#">Таймер</a></li>
+							<li class="footer-menu__item"><a href="#">Техника "Помидор"</a></li>
+							<li class="footer-menu__item"><a href="#">Разработчик</a></li>
+						</ul>
+
+					</div>
+
+					<!-- Вторая колонка. Социальные сети проекта -->
+					<div class="footer-social">
+
+						<!-- Заголовки в секции везде одинаковые, вынес в отдельный класс -->
+						<h4 class="footer-menu__heading footer__heading">Социальные сети</h4>
+
+						<!-- Сам list-menu в footer -->
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="https://vk.com/avavion" target="_blank">ВКонтакте</a>
+							</li>
+							<li class="footer-menu__item"><a href="https://www.instagram.com/"
+									target="_blank">instagram</a></li>
+							<li class="footer-menu__item"><a href="https://github.com/" target="_blank">github</a></li>
+						</ul>
+
+					</div>
+
+					<!-- Третья колонка. Проект на GitHub -->
+					<div class="footer-pomodoro">
+
+						<!-- Заголовки в секции везде одинаковые, вынес в отдельный класс -->
+						<h4 class="footer-menu__heading footer__heading">Pomodoro timer</h4>
+
+						<!-- Сам list-menu в footer -->
+						<ul class="footer-menu__list">
+							<li class="footer-menu__item"><a href="https://github.com/avavion/pomodoro"
+									target="_blank">Github</a></li>
+							<li class="footer-menu__item"><a href="https://vk.com/bogov_studio"
+									target="_blank">Вконтакте</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- Разделение на две части. Правая сторона -->
+				<div class="footer-content-right">
+
+					<!-- Четвёртая колонка. Лицензия MIT и используемые плюшки -->
+					<div class="footer-licence">
+
+						<h4 class="licence__heading">
+							mit licence
+						</h4>
+						<a href="https://fontawesome.com/" target="_blank">FontAwesome</a>
+						<a href="https://fonts.google.com" target="_blank">Google Fonts</a>
+
+					</div>
+
+				</div>
+
+				<!-- </Wrap> -->
+			</div>
+			<!-- </container> -->
+		</div>
 	</footer>
 
 	<!-- Скрипты проекта -->
