@@ -5,14 +5,8 @@ document
     document.querySelector(".menu-list").classList.toggle("menu-list-enable")
   );
 
+const scrollDown = () => window.pageYOffset >= header.offsetTop ? header.classList.add("sticky") : header.classList.remove("sticky");
+
 // Header Sticky
 let header = document.querySelector("#header");
 window.addEventListener("scroll", scrollDown);
-
-function scrollDown() {
-  if (window.pageYOffset >= header.offsetTop) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
